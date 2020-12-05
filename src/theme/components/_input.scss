@@ -1,0 +1,22 @@
+@import "../mixins";
+@import "../variables";
+
+input {
+    font-family: "montserate";
+    color: black;
+    font-size: rem(14) !important;
+    line-height: rem(16) !important;
+    padding: rem(8) rem(12);
+    border-radius: rem(2);
+    letter-spacing: 0;
+    width: 100%;
+    border: none;
+    background: none;
+    border: red;
+    display: block;
+    @include inputPlaceholder() {
+        
+        opacity: 1;
+    }
+    
+}
