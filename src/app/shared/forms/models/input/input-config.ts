@@ -26,10 +26,11 @@ export interface InputConfig {
     // prefix option
     prefixIcon?: PrefixIcon;
     formStatus?: FormStatus;
+    classes?: string;
 }
 
 export interface PrefixIcon {
-    addIcon?: boolean; 
+    addIcon?: boolean;
     icon?: string;
-    class?: string;
+    iconClasses?: string;
 }

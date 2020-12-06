@@ -25,6 +25,7 @@ export class InputsComponent implements OnInit, ControlValueAccessor {
   };
 
   @Input() config!: InputConfig;
+  @Input() class!: string | '';
 
   onChange!: (_: any) => void;
   onTouched!: () => void;

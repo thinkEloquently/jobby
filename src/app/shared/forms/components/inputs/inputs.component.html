@@ -1,6 +1,6 @@
 <ng-container [formGroup]="formGroup">
 
-    <div class="app-form">
+    <div class="app-form" [ngClass]="class || ''">
         <div class="form" [ngClass]="{
                     'form-group-without-prefixIcon': !config?.prefixIcon,
                     'form-group-without-prefixIcon-error': !config?.prefixIcon?.addIcon && config?.formStatus?.isError,

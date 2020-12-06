@@ -7,8 +7,15 @@
         </div> -->
         <div class="w-100">
             <form (ngSubmit)="onSubmit()">
-            <app-inputs [config]="emailConfig"></app-inputs>
-            <app-inputs [config]="passwordConfig"></app-inputs>
+            <app-inputs [config]="emailConfig" class="my-10"></app-inputs>
+            <app-inputs [config]="passwordConfig" class="my-10"></app-inputs>
+            <div class="my-20">
+
+                <app-button type="button" color="primary">
+                    Log in
+                </app-button>
+            
+            </div>
         </form>
         </div>
     </div>
